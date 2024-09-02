@@ -7,7 +7,7 @@
 }
 
 html {
-  font-size: 62, 5%;
+  font-size: 62,5%;
 }
 
 body {
@@ -23,7 +23,7 @@ header {
 
 .menu-content {
   width: 100vw;
-  height: 100px;
+  height: 70px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -34,7 +34,7 @@ header {
 }
 
 .logo {
-  font-size: 1, 6rem;
+  font-size: 1,6rem;
   letter-spacing: 0.4rem;
   cursor: pointer;
   color: rgb(224, 65, 7);
@@ -54,9 +54,8 @@ header {
 }
 
 .menu-content .list-nav a:hover {
-  width: 100%;
-  background: rgb(224, 65, 7);
-  transition: all 1.4s ease;
+  color: rgb(224, 65, 7);
+  border-bottom: 3px solid #be3908;
 }
 
 .primeira-section {
