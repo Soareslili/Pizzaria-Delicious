@@ -6,17 +6,8 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62,5%;
-}
-
 body {
   overflow-x: hidden;
-}
-
-header {
-  width: 100%;
- height: 70px;
 }
 
 /* Menu */
@@ -34,7 +25,7 @@ header {
 }
 
 .logo {
-  font-size: 1,6rem;
+  font-size: 1.6rem;
   letter-spacing: 0.4rem;
   cursor: pointer;
   color: rgb(224, 65, 7);
@@ -51,12 +42,15 @@ header {
   text-decoration: none;
   color: white;
   padding: 1.5rem;
+  transition: 0.8s;
 }
 
 .menu-content .list-nav a:hover {
   color: rgb(224, 65, 7);
   border-bottom: 3px solid #be3908;
 }
+
+
 
 .primeira-section {
   background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1)),
@@ -213,7 +207,7 @@ header {
   justify-content: center;
   align-items: center;
   grid-template-columns: 150px 150px;
-  margin-left: 5rem;
+  margin-left: 2rem;
 }
 
 .itens-cardapio .info h4 span {
@@ -284,50 +278,101 @@ header {
   color: #be3908;
 }
 
-@media (max-width: 1200px) {
-  .main {
-    display: block;
+/*  Media */
+
+@media (max-width: 768px) {
+
+  body {
+    overflow: hidden;
+  }
+
+  .menu-content .list-nav {
+    display: none;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-right: 30px;
   }
 
   .menu-content {
+    width: 100vw;
+    height: 100px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 12%;
     padding-left: 0px;
   }
 
-  .segunda-section img {
-    width: 600px;
+  .conteudo-principal .text-1 {
+    width: 300px;
+    font-size: 1.2rem;
+    margin-right: 60px;
   }
 
-
-
-/*@media (max-width: 992px) {}*/
-  html {
-    font-size: 90%;
+  .conteudo-principal .text-2 {
+    font-size: 0.8rem;
+    margin-right: 60px;
   }
 
-
-/*@media (max-width: 768px) {*/
-  html {
-    font-size: 70%;
-  }
-
-  .menu-content {
+  .btn {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0px 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 60px;
+    font-size: 1rem;
+  }
+
+  .btn button {
+    font-size: 10px;
+    width: 200px;
+    height: 50px;
+  }
+
+  .segunda-section {
+    width: 100vw;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
 
-  .itens-cardapio {
-    grid-template-columns: repeat(2, minmax(50px, 350px));
+  .sobrenos h1 {
+    font-size: 2.5rem;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-right: 60px;
+  }
+  
+  .sobrenos p {
+    width: 300px;
+    font-size: 1rem;
+    margin-right: 60px;
+    margin-bottom: 10px;
   }
 
-  .itens-cardapio .info h4 {
-    margin-left: 8rem;
+  .segunda-section img {
+    width: 350px;
+    height: 330px;
+    text-align: center;
   }
+
+  .contatos-secao span {
+    margin: 15px;
+    font-size: 1rem;
+  }
+
+
+
 
 }
